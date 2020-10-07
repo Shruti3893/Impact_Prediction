@@ -1,4 +1,4 @@
-#IMPACT PREDICTION
+#IMPACT PREDICTION 
 
 import pickle
 import pandas as pd 
@@ -47,10 +47,6 @@ Incidents_service=pd.merge(Incidents_service, Incidents_service.groupby(['ID','I
 Incidents_service.shape
 Incidents_service.head(10)
 
-#Dropping Unwanted columns from dataset post Data Cleaning
-Incidents_service.drop(['opened_time','created_at','updated_at','support_incharge','notify','problem_id','change request'], inplace=True, axis=1)
-Incidents_service.head(10)
-
 # Getting list of columns 
 list(Incidents_service.columns)
 
@@ -58,10 +54,13 @@ sns.heatmap(Incidents_service.corr(),annot=True)
 
 # Correlation matrix 
 Incidents_service.corr()
-Incidents_service.columns
 
-X = Incidents_service.drop(["impact"],axis=1)
-y=Incidents_service[['impact']]
+#Renaming Target Varibale entries
+Incidents_service['impact'].replace({"1 - High": "High", "2 - Medium": "Medium","3 - Low": "Low"}, inplace=True)
+print(Incidents_service['impact'])
+
+X = Incidents_service[['ID','ID_status','count_reassign','count_opening','count_updated','location','category_ID','user_symptom']]
+y = Incidents_service[['impact']]
 
 categorical_features_indices = np.where(X.dtypes != np.float)[0]
 categorical_features_indices
