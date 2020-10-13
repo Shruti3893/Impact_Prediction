@@ -55,11 +55,7 @@ sns.heatmap(Incidents_service.corr(),annot=True)
 # Correlation matrix 
 Incidents_service.corr()
 
-#Renaming Target Varibale entries
-Incidents_service['impact'].replace({"1 - High": "High", "2 - Medium": "Medium","3 - Low": "Low"}, inplace=True)
-print(Incidents_service['impact'])
-
-X = Incidents_service[['ID','ID_status','count_reassign','count_opening','count_updated','location','category_ID','user_symptom']]
+X = Incidents_service[['ID','ID_status','count_reassign','count_opening','count_updated','location','user_symptom']]
 y = Incidents_service[['impact']]
 
 categorical_features_indices = np.where(X.dtypes != np.float)[0]
@@ -87,7 +83,7 @@ F1_score
 
 confusion_matrix(y_test,pred)
 
-sns.heatmap(confusion_matrix(y_test,pred),annot=True,cmap='Blues',xticklabels=['High', 'Low ','Medium'],yticklabels=['High', 'Low ','Medium'],fmt='g')
+sns.heatmap(confusion_matrix(y_test,pred),annot=True,cmap='Blues',xticklabels=['High', 'Medium ','Low'],yticklabels=['High', 'Medium ','Low'],fmt='g')
 
 #Feature Importance Graph
 clf.feature_importances_ 
