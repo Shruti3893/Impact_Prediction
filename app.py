@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from flask import Flask, request, jsonify, render_template
 import pickle
 
@@ -17,7 +18,8 @@ def impact():
      prediction = clf.predict(features)
      
      return render_template('index.html', prediction_text='Impact will be {}'.format(prediction))
-
-
+    else:
+        return render_template('index.html',Response ='Please enter Valid Input.')
+ 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -11,7 +11,7 @@ from sklearn.model_selection import StratifiedKFold,cross_val_score,KFold,cross_
 from sklearn.metrics import classification_report,accuracy_score,confusion_matrix,f1_score
 
 # Loading the data
-Incidents_service = pd.read_excel("C:\\Users\\dell\\Desktop\\ExcelR\\Project P31\\DataSet\\Incident_services.xlsx")
+Incidents_service = pd.read_excel("C:\\Users\\dell\\Desktop\\P31_Project\\Extras\\DataSet\\Incident_services.xlsx")
 pd.options.display.max_columns = None #Helps to see all column names in the Dataset
 Incidents_service.head(10) 
 Incidents_service.dtypes
@@ -87,7 +87,7 @@ F1_score
 
 confusion_matrix(y_test,pred)
 
-sns.heatmap(confusion_matrix(y_test,pred),annot=True,cmap='Blues',xticklabels=['1 - High', '2 - Medium ','3 - Low'],yticklabels=['1 - High', '2 - Medium ','3 - Low'],fmt='g')
+sns.heatmap(confusion_matrix(y_test,pred),annot=True,cmap='Blues',xticklabels=['High', 'Low ','Medium'],yticklabels=['High', 'Low ','Medium'],fmt='g')
 
 #Feature Importance Graph
 clf.feature_importances_ 
