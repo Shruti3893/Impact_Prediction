@@ -37,7 +37,7 @@ For Show casing the project, I used Flask Framework.
 9] Cloud Platform: 
 I deployed the final model on Heroku Cloud Platform. 
 
-To see my website/web-api Go to >>> 
+To see my website/web-api Go to >>> https://impactprediction-api.herokuapp.com/
 
 
 
