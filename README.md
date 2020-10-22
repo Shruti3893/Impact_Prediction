@@ -75,6 +75,9 @@ I deployed the final model on Heroku Cloud Platform.
 
 To see my website/web-api Go to >>> https://impactprediction-api.herokuapp.com/
 
+Please check the below link for Complete PPT for Project-
+https://github.com/Shruti3893/Impact_Prediction/blob/main/Incident%20Services%20PPT.pptx
+
 
 
 ![template1](https://github.com/Shruti3893/Impact_Prediction/blob/main/templates/input.png)
