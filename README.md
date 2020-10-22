@@ -77,7 +77,7 @@ To see my website/web-api Go to >>> https://impactprediction-api.herokuapp.com/
 
 
 
-![template1]()
+![template1](https://github.com/Shruti3893/Impact_Prediction/blob/main/templates/input.png)
 
-![template1]()
+![template1](https://github.com/Shruti3893/Impact_Prediction/blob/main/templates/output.png)
 
