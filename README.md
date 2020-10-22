@@ -10,19 +10,19 @@ To build the best model which gives the maximum performance, and need to deploy 
 
 # Process flow for the Project include below steps:-
 
-## [1. Business Objective-]
+## [1. Business Objective]
 The Business Objective for this Project is to predict the impact of the incident raised by the customer.
 
-## [2. DataSet Details-]
+## [2. DataSet Details]
 -The dataset is having incidents raised by customers. Which contains an event log of an incident management process extracted from a service desk platform of an IT company.
 
 -Dataset has 25 columns in total, in which 24 are Independent Variables and 'impact' is Target Variable. 
 
 [Incidents_service.xlsx](https://github.com/Shruti3893/Impact_Prediction/blob/main/Incident_services.xlsx) is the provided Dataset for the Project.
 
-## [3. Exploratory Data Analysis-]
+## [3. Exploratory Data Analysis]
 
-### [1) Data Visualization]
+### 1) Data Visualization:
 - For getting Initial Overview of Dataset I choose to get Pandas Profiling Report. Below is the link for the same.
 
 https://github.com/Shruti3893/Impact_Prediction/blob/main/Pandas%20Profiling%20Report_Impact%20Prediction.html
@@ -31,17 +31,17 @@ https://github.com/Shruti3893/Impact_Prediction/blob/main/Pandas%20Profiling%20R
 
 https://public.tableau.com/profile/shruti.bichkunde#!/vizhome/Incident_Services/Story1
 
-### [2) Data Analysis-]
+### 2) Data Analysis:
 -I did Missing Value Treatment on some features. 
 -I eliminated duplicates among the columns. 
 -I dealt with some misclassified/misinterpreted data in some columns. 
 -I replaced the values with Mode (A measure of Central Tendency).
 
-### [3) Data Preprocessing-]
+### 3) Data Preprocessing:
 -I did some data transformations by hot encoding, label encoding and probability encoding on catagorical data. 
 -Based on the performance of the model, the specific encoding process is selected for the final model.
 
-### [4) Feature Selection-]
+### 4) Feature Selection:
 1. For selecting the desied features for final model, I tried various feature selection techniques, such as 
 -ExtraTreesClassifier
 -SelectKModel
@@ -51,7 +51,7 @@ https://public.tableau.com/profile/shruti.bichkunde#!/vizhome/Incident_Services/
 
 2. I checked feature importance both graphically and analytically to come up with the list of desired columns for final model.
 
-## [4. Model Building-]
+## [4. Model Building]
 -I tried building various models with multiple algorithms such as 
 1) Logistic Regression
 2) Decision Tree Classifier
@@ -67,10 +67,10 @@ https://public.tableau.com/profile/shruti.bichkunde#!/vizhome/Incident_Services/
 
 -Based on the Classification report, I choosed the best model as CatBoost Classifier for the project. It gave highest Accuracy, Precision, Recall and F1-score.
 
-## [5. Deployment in Local System-]
+## [5. Deployment in Local System]
 For Show casing the project, I used Flask Framework.
 
-## [6. Cloud Platform-]
+## [6. Cloud Platform]
 I deployed the final model on Heroku Cloud Platform. 
 
 To see my website/web-api Go to >>> https://impactprediction-api.herokuapp.com/
