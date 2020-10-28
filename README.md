@@ -52,7 +52,7 @@ https://public.tableau.com/profile/shruti.bichkunde#!/vizhome/Incident_Services/
 2. I checked feature importance both graphically and analytically to come up with the list of desired columns for final model.
 
 ## [4. Model Building]
--I tried building various models with multiple algorithms such as 
+- I tried building various models with multiple algorithms such as 
 1) Logistic Regression
 2) Decision Tree Classifier
 3) Random Forest Classifier
