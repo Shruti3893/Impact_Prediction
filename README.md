@@ -6,7 +6,7 @@ README.md
 To build the best model which gives the maximum performance, and need to deploy the model with either RShiny or Flask/Heroku.
 
 # Milestones: 
-50 days to complete the Project.
+70 days to complete the Project.
 
 # Process flow for the Project include below steps:-
 
