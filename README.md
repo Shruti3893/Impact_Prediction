@@ -42,7 +42,7 @@ https://public.tableau.com/profile/shruti.bichkunde#!/vizhome/Incident_Services/
 -Based on the performance of the model, the specific encoding process is selected for the final model.
 
 ### 4) Feature Selection:
-1. For selecting the desied features for final model, I tried various feature selection techniques, such as 
+1. For selecting the desired features for final model, I tried various feature selection techniques, such as 
 -ExtraTreesClassifier
 -SelectKModel
 -Correlation
