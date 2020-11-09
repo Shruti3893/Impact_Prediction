@@ -32,22 +32,22 @@ https://github.com/Shruti3893/Impact_Prediction/blob/main/Pandas%20Profiling%20R
 https://public.tableau.com/profile/shruti.bichkunde#!/vizhome/Incident_Services/Story1
 
 ### 2) Data Analysis:
--I did Missing Value Treatment on some features. 
--I eliminated duplicates among the columns. 
--I dealt with some misclassified/misinterpreted data in some columns. 
--I replaced the values with Mode (A measure of Central Tendency).
+- I did Missing Value Treatment on some features. 
+- I eliminated duplicates among the columns. 
+- I dealt with some misclassified/misinterpreted data in some columns. 
+- I replaced the values with Mode (A measure of Central Tendency).
 
 ### 3) Data Preprocessing:
--I did some data transformations by hot encoding, label encoding and probability encoding on catagorical data. 
--Based on the performance of the model, the specific encoding process is selected for the final model.
+- I did some data transformations by hot encoding, label encoding and probability encoding on catagorical data. 
+- Based on the performance of the model, the specific encoding process is selected for the final model.
 
 ### 4) Feature Selection:
 1. For selecting the desired features for final model, I tried various feature selection techniques, such as 
--ExtraTreesClassifier
--SelectKModel
--Correlation
--Mutual info classif 
--Univariate Selection. 
+- ExtraTreesClassifier
+- SelectKModel
+- Correlation
+- Mutual info classif 
+- Univariate Selection. 
 
 2. I checked feature importance both graphically and analytically to come up with the list of desired columns for final model.
 
@@ -65,7 +65,7 @@ https://public.tableau.com/profile/shruti.bichkunde#!/vizhome/Incident_Services/
 4) LGBM Classifier 
 5) Neural Networks
 
--Based on the Classification report, I choosed the best model as CatBoost Classifier for the project. It gave highest Accuracy, Precision, Recall and F1-score.
+- Based on the Classification report, I choosed the best model as CatBoost Classifier for the project. It gave highest Accuracy, Precision, Recall and F1-score.
 
 ## [5. Deployment in Local System]
 For Show casing the project, I used Flask Framework.
