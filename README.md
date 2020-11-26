@@ -65,7 +65,7 @@ https://public.tableau.com/profile/shruti.bichkunde#!/vizhome/Incident_Services/
 4) LGBM Classifier 
 5) Neural Networks
 
-- Based on the Classification report, I choosed the best model as CatBoost Classifier for the project. It gave highest Accuracy, Precision, Recall and F1-score.
+- Based on the Classification report, I chose the best model as CatBoost Classifier for the project. It gave highest Accuracy, Precision, Recall and F1-score.
 
 ## [5. Deployment in Local System]
 For Show casing the project, I used Flask Framework.
